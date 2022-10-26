@@ -1,0 +1,87 @@
+*{
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: #ffffff;
+
+}
+body{
+    background-color: #8990EC;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.wrapper{
+    background-color: #272639;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    height: 525px;
+    width: 360px;
+    color: #ffffff;
+    margin: 100px auto;
+}
+.bill-container{
+    margin-top: 64px;
+}
+.tip-container{
+    margin-top: 22px;
+}
+.title{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    background-color: #353959;
+    border-radius: 1.4rem;
+    padding: 0rem 0.8rem;
+    height: 30px;
+}
+span{
+    font-weight: 500;
+}
+input{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #353959;
+    border: none;
+    outline: none;
+    padding: none;
+}
+.bottom{
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-container{
+    margin-top: 20px;
+}
+.totalperprice{
+    margin-top: 10px;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    background-color: #8990EC;
+    border: none;
+    outline: none;
+    color: #353959;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    font-weight: 500;
+}
+#numberOfPeople{
+    font-size: 1.6rem;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-weight: 500;
+}
+#perPersonTotal{
+    display: flex;
+    font-weight: 500;
+    font-size: 2rem;
+    justify-content: flex-end;
+}
