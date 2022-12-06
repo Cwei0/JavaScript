@@ -107,7 +107,7 @@ function playGame() {
   // 2. Add a 'click' event listener to each button
   // 3. Call the onClickRPS function every time someone clicks
   // 4. Make sure to pass the currently selected rps button as an argument
-  rpsButtons.forEach(rpsButton =>{
+  rpsButtons.forEach(rpsButton => {
     rpsButton.onclick = () => onClickRPS(rpsButton.value)
   })
 
