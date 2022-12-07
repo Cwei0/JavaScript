@@ -9,15 +9,21 @@
 
 
 // promises always contain resolve and reject
-const promise1 = new Promise ((resolve, reject) => {
+const promise1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        isReady = [true, false][Math.floor(Math.random()  * 2)];
+        isReady = [true, false][Math.floor(Math.random() * 2)];
         isReady ? resolve("soup is ready") : reject("soup is not ready");
     }, 3000);
 });
 
 console.log(
     promise1
-    .then(success => console.log({success}))
-    .catch(error => console.log({error}))
-    )
+        .then(success => console.log({ success }))
+        .catch(error => console.log({ error }))
+)
+
+console.log('fetch:', 
+fetch("https://dog.ceo/api/breeds/image/random")
+.then(response => response.json())
+.then(data => console.log(data))
+)
