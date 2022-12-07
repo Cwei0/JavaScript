@@ -1,8 +1,23 @@
 // Asynchronous Programming - piece of code that runs non-lineraly 
 
-const waitingforSoup = () => console.log("2");
+// const orderSoup = () => console.log("soup");
 
-console.log("1");
+// console.log("you start the convo with your babe");
 
-setTimeout(waitingforSoup, 3000);
-console.log("3");
+// setTimeout(orderSoup, 3000);
+// console.log("still speaking");
+
+
+// promises always contain resolve and reject
+const promise1 = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        isReady = [true, false][Math.floor(Math.random()  * 2)];
+        isReady ? resolve("soup is ready") : reject("soup is not ready");
+    }, 3000);
+});
+
+console.log(
+    promise1
+    .then(success => console.log({success}))
+    .catch(error => console.log({error}))
+    )
